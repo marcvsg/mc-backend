@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MC</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="img/MC.png" />
+  </head>
+  
+  <body>
+    <!-- Header -->
+    <div class="header"> 
+        <img class="logo" id="logo" src="img/MC.png" alt="Logo" />
+    </div>
+    <!-- Header -->
+
+    <!-- Main -->
+    <div class="header2">
+        <h1>Cadastro de Clientes</h1>
+    </div>
+
+    <!-- Formulario -->
+    <div class="form">
+        <form id="clienteForm">
+            <ul class="form-group">
+            <li>
+                <label for="nome_cliente">Nome do Cliente</label>
+                <input type="text" id="nome_cliente" name="nome_cliente" placeholder="Nome do Cliente" required />
+            </li>
+            <li>           
+                <label for="email_cliente">Email do Cliente</label>
+                <input type="email" id="email_cliente" name="email_cliente" placeholder="Email do Cliente" required />
+            </li> 
+            <li>
+                <label for="telefone_cliente">Telefone do Cliente</label>
+                <input type="text" class="form-control" id="telefone_cliente" name="telefone_cliente" value="21 9" placeholder="21 9 9999-9999" maxlength="14" />
+            </li> 
+            <li>
+                <label for="endereco_cliente">Endereço do Cliente</label>
+                <input type="text" id="endereco_cliente" name="endereco_cliente" placeholder="Endereço do Cliente" />
+            </li>
+            <li>
+                <label for="cidade_cliente">Cidade do Cliente</label>
+                <input type="text" id="cidade_cliente" name="cidade_cliente" placeholder="Cidade do Cliente" />
+            </li>
+            <li>
+                <button type="submit" class="btn-enviar" id="btn-cadastrar">Cadastrar Cliente</button>
+            </li>
+        </ul>
+        </form>
+    </div>
+
+<!-- Botão de Clientes cadastrados -->
+<div class="btn-container">
+  <button type="button" id="btn-ver-clientes" class="btn-ver-clientes">
+      📋 Ver Clientes Cadastrados
+  </button>
+</div>
+
+<!-- Modal para exibir os clientes -->
+<div id="modal-clientes" class="modal">
+  <div class="modal-content">
+      <div class="modal-header">
+          <h2>Clientes Cadastrados</h2>
+          <span class="close">&times;</span>
+      </div>
+      <div class="modal-body">
+          <div id="lista-clientes" class="lista-clientes">
+              <div class="loading">Carregando clientes...</div>
+          </div>
+      </div>
+  </div>
+</div>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <p>&copy; 2025 MC Manutenção. Desenvolvido por Marcus Gomes</p>
+      </footer>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
