@@ -1,7 +1,7 @@
 
 ## MC - Backend & Sistema
 
-Este projeto foi feito em react | electron | node
+Este projeto foi feito em electron | node
 
 O principal objetivo deste sistema é gerenciar de forma prática o cadastro de clientes e o registro dos serviços realizados, garantindo organização, rapidez e fácil acesso às informações essenciais para o negócio.
 
